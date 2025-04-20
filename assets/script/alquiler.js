@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
     const alquilerContainer = document.getElementById('alquilerContainer');
   
-    // Verifica que el arreglo esté disponible y no esté vacío
     if (!propiedades_alquiler || propiedades_alquiler.length === 0) {
       console.error("Error: propiedades_alquiler no está definido o está vacío.");
       return;
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function renderizarPropiedades(container, propiedades) {
-    container.innerHTML = ""; // Limpia el contenido antes de añadir nuevas propiedades
+    container.innerHTML = ""; 
   
     propiedades.forEach(propiedad => {
       const col = document.createElement('div');
